@@ -6,10 +6,6 @@ cd ../complete
 cat mvn -v
 
 
-
-mvn compile
-
-
 ./mvnw clean package install
 
 ret=$?
