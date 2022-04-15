@@ -2,7 +2,7 @@ pipeline {
 	agent none
 
 	triggers {
-		pollSCM 'H/10 * * * *'
+		pollSCM '* * * * *'
 	}
 
 	options {
@@ -31,7 +31,7 @@ pipeline {
 	// 		script {
 	// 			slackSend(
 	// 					color: (currentBuild.currentResult == 'SUCCESS') ? 'good' : 'danger',
-	// 					channel: '#sagan-content',
+	// 					channel: '#',
 	// 					message: "${currentBuild.fullDisplayName} - `${currentBuild.currentResult}`\n${env.BUILD_URL}")
 	// 			emailext(
 	// 					subject: "[${currentBuild.fullDisplayName}] ${currentBuild.currentResult}",
